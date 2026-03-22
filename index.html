@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- FlexOffers verification — replace content value with your code -->
+  <meta name="flexoffers-verification" content="FLEXOFFERS_CODE_HERE" />
+
+  <title>Quiet Night Co — Science-Backed Snoring Solutions</title>
+  <meta name="description" content="The Quiet Night Protocol: identify your exact snoring type and follow a clear 30-day plan to reduce it — without surgery or machines." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy:       #1B2A4A;
+      --blue:       #4A90D9;
+      --white:      #FFFFFF;
+      --gold:       #D4A373;
+      --light-navy: #E8EBF0;
+      --body-text:  #3a4a6a;
+      --font:       'Montserrat', sans-serif;
+    }
+
+    body {
+      font-family: var(--font);
+      color: var(--navy);
+      background: var(--white);
+      line-height: 1.5;
+    }
+
+    /* ── Navigation ── */
+    nav {
+      background: var(--navy);
+      padding: 22px 48px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      color: var(--white);
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      text-decoration: none;
+    }
+
+    .logo span { color: var(--gold); }
+
+    .nav-cta {
+      background: var(--gold);
+      color: var(--navy);
+      padding: 10px 22px;
+      font-size: 14px;
+      font-weight: 700;
+      border-radius: 3px;
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+
+    .nav-cta:hover { opacity: 0.88; }
+
+    /* ── Hero ── */
+    .hero {
+      background: var(--navy);
+      padding: 110px 48px 100px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: clamp(34px, 5vw, 54px);
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--white);
+      max-width: 780px;
+      margin: 0 auto 24px;
+    }
+
+    .hero h1 em {
+      color: var(--gold);
+      font-style: normal;
+    }
+
+    .hero p {
+      font-size: clamp(16px, 2vw, 19px);
+      font-weight: 400;
+      color: rgba(255,255,255,0.85);
+      max-width: 580px;
+      margin: 0 auto 44px;
+      line-height: 1.7;
+    }
+
+    .btn-primary {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--navy);
+      padding: 18px 44px;
+      font-size: 17px;
+      font-weight: 700;
+      border-radius: 3px;
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+
+    .btn-primary:hover { opacity: 0.9; }
+
+    .hero-sub {
+      margin-top: 14px;
+      font-size: 13px;
+      color: rgba(255,255,255,0.45);
+    }
+
+    /* ── Shared section wrapper ── */
+    .section {
+      padding: 88px 48px;
+    }
+
+    .inner {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    .label {
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: var(--blue);
+      margin-bottom: 14px;
+    }
+
+    h2 {
+      font-size: clamp(26px, 3.5vw, 38px);
+      font-weight: 700;
+      line-height: 1.25;
+      color: var(--navy);
+      margin-bottom: 28px;
+    }
+
+    .gold-rule {
+      width: 52px;
+      height: 3px;
+      background: var(--gold);
+      margin-bottom: 32px;
+    }
+
+    p {
+      font-size: 17px;
+      line-height: 1.75;
+      color: var(--body-text);
+      margin-bottom: 16px;
+    }
+
+    p:last-child { margin-bottom: 0; }
+
+    /* ── Problem ── */
+    .problem { background: var(--light-navy); }
+
+    /* ── Features ── */
+    .features { background: var(--navy); }
+
+    .features .label { color: var(--gold); }
+
+    .features h2 {
+      color: var(--white);
+      margin-bottom: 12px;
+    }
+
+    .features .gold-rule { margin-bottom: 16px; }
+
+    .features-intro {
+      color: rgba(255,255,255,0.75);
+      margin-bottom: 52px;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 36px;
+    }
+
+    .feature {
+      border-left: 3px solid var(--gold);
+      padding-left: 20px;
+    }
+
+    .feature h3 {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 8px;
+    }
+
+    .feature p {
+      font-size: 15px;
+      color: rgba(255,255,255,0.65);
+      margin: 0;
+      line-height: 1.6;
+    }
+
+    /* ── Email capture ── */
+    .email-section {
+      background: var(--light-navy);
+      text-align: center;
+    }
+
+    .email-section .label { color: var(--blue); }
+
+    .email-section h2 { margin-bottom: 12px; }
+
+    .email-section > .inner > p {
+      max-width: 520px;
+      margin: 0 auto 36px;
+    }
+
+    .email-form {
+      display: flex;
+      gap: 12px;
+      max-width: 480px;
+      margin: 0 auto;
+    }
+
+    .email-form input[type="email"] {
+      flex: 1;
+      padding: 15px 18px;
+      font-family: var(--font);
+      font-size: 15px;
+      border: 2px solid #c4cedc;
+      border-radius: 3px;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .email-form input[type="email"]:focus {
+      border-color: var(--blue);
+    }
+
+    .btn-secondary {
+      background: var(--navy);
+      color: var(--white);
+      padding: 15px 26px;
+      font-family: var(--font);
+      font-size: 15px;
+      font-weight: 700;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: opacity 0.2s;
+    }
+
+    .btn-secondary:hover { opacity: 0.85; }
+
+    .email-note {
+      font-size: 13px;
+      color: #8a9ab8;
+      margin-top: 12px;
+    }
+
+    /* ── Footer ── */
+    footer {
+      background: var(--navy);
+      padding: 40px 48px;
+      text-align: center;
+    }
+
+    footer p {
+      font-size: 13px;
+      color: rgba(255,255,255,0.4);
+      margin-bottom: 6px;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 640px) {
+      nav { padding: 16px 24px; }
+      .nav-cta { display: none; }
+      .hero { padding: 70px 24px 80px; }
+      .section { padding: 64px 24px; }
+      .email-form { flex-direction: column; }
+      footer { padding: 32px 24px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <a class="logo" href="/">Quiet Night <span>Co</span></a>
+    <a class="nav-cta" href="https://quietnightco.gumroad.com">Get the guide — $27</a>
+  </nav>
+
+  <!-- Hero -->
+  <div class="hero">
+    <h1>Finally sleep in the <em>same room</em> again.</h1>
+    <p>The Quiet Night Protocol identifies your exact type of snoring and gives you a clear, 30-day plan to reduce it — without expensive gadgets, gimmicks, or guesswork.</p>
+    <a class="btn-primary" href="https://quietnightco.gumroad.com">Get the guide — $27</a>
+    <p class="hero-sub">Instant download &nbsp;·&nbsp; 30-day money-back guarantee</p>
+  </div>
+
+  <!-- Problem -->
+  <div class="section problem">
+    <div class="inner">
+      <div class="label">Why most advice fails</div>
+      <h2>Most snoring solutions don't work because they treat every snorer the same.</h2>
+      <div class="gold-rule"></div>
+      <p>Nasal strips, chin straps, mouthguards — if you've tried them and they didn't work, that's not a willpower problem. It's a diagnostic problem.</p>
+      <p>Different anatomy causes different snoring. A device designed for jaw-based snoring does nothing for nasal obstruction. The wrong solution for your type will always fail, no matter how consistently you use it.</p>
+      <p>The Quiet Night Protocol starts where other guides don't — by identifying your specific snoring type, then building a personalised plan around that diagnosis.</p>
+    </div>
+  </div>
+
+  <!-- Solution -->
+  <div class="section">
+    <div class="inner">
+      <div class="label">A different approach</div>
+      <h2>A system built around your anatomy, not a generic checklist.</h2>
+      <div class="gold-rule"></div>
+      <p>The self-assessment in Chapter 2 identifies whether your snoring is nasal, positional, palatal, or tongue-based. Every recommendation that follows — exercises, devices, and your 30-day plan — is matched to your result.</p>
+      <p>You'll know exactly what to try tonight, what to buy (and what to skip), and what to expect over the next 30 days. No trial and error. No wasted money. A clear path forward from day one.</p>
+    </div>
+  </div>
+
+  <!-- Features -->
+  <div class="section features">
+    <div class="inner">
+      <div class="label">What's inside</div>
+      <h2>Everything in the protocol</h2>
+      <div class="gold-rule"></div>
+      <p class="features-intro">One structured guide covering diagnosis, treatment, device selection, and long-term habits — matched to your specific snoring type.</p>
+
+      <div class="features-grid">
+        <div class="feature">
+          <h3>Self-Assessment Questionnaire</h3>
+          <p>Identify your snoring type in under 10 minutes. The starting point for everything that follows.</p>
+        </div>
+        <div class="feature">
+          <h3>Myofunctional Exercise Programme</h3>
+          <p>Six evidence-based exercises targeting the throat and tongue muscles that cause snoring — 10 minutes a day.</p>
+        </div>
+        <div class="feature">
+          <h3>Device Guide</h3>
+          <p>Matched by snoring type and budget, so you only spend money on something that can actually work for your anatomy.</p>
+        </div>
+        <div class="feature">
+          <h3>30-Day Action Plan</h3>
+          <p>A day-by-day checklist from night one through week four. No guesswork, no decision fatigue.</p>
+        </div>
+        <div class="feature">
+          <h3>Partner Communication Framework</h3>
+          <p>Scripts and a Sleep Contract to turn a source of resentment into a shared goal you're working on together.</p>
+        </div>
+        <div class="feature">
+          <h3>GP Conversation Guide</h3>
+          <p>The exact words to use if you need medical support — so you leave the appointment with clear next steps.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Email capture -->
+  <div class="section email-section">
+    <div class="inner">
+      <div class="label">Free resource</div>
+      <h2>Not ready to buy? Start here.</h2>
+      <p>Download the Quiet Night Checklist — 10 things you can do tonight to reduce snoring without spending a penny.</p>
+
+      <!-- Replace with ConvertKit embed form action URL -->
+      <form class="email-form" action="https://app.convertkit.com/forms/YOUR_FORM_ID/subscriptions" method="post">
+        <input type="email" name="email_address" placeholder="Your email address" required />
+        <button type="submit" class="btn-secondary">Send it to me</button>
+      </form>
+      <p class="email-note">No spam. Unsubscribe at any time.</p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Quiet Night Co &nbsp;·&nbsp; QuietNightCo.com</p>
+    <p>This guide is for informational purposes only and does not constitute medical advice.</p>
+  </footer>
+
+</body>
+</html>
